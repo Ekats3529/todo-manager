@@ -1,25 +1,128 @@
+/* ===== ОБЩИЕ СТИЛИ ===== */
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0 20px;
+    font-family: "Inter", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f2f4f8;
+    color: #333;
 }
 
+/* ===== HEADER ===== */
 header {
-  background-color: #1f43a8;
-  color: white;
-  padding: 10px 20px;
+    background: #1f43a8;
+    color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav a {
-  color: white;
-  margin-right: 10px;
-  text-decoration: none;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding-bottom: 3px;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* ===== MAIN CONTAINER ===== */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 25px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+/* Заголовки */
+h1, h2 {
+    text-align: center;
+    color: #1f43a8;
+}
+
+/* ===== ФОРМА ДОБАВЛЕНИЯ ЗАДАЧ ===== */
+#task-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #bfc6d9;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+
+#task-input:focus {
+    border-color: #1f43a8;
+    outline: none;
 }
 
 button {
-  margin-left: 5px;
+    padding: 12px 20px;
+    background: #1f43a8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.2s;
 }
 
-li {
-  margin-bottom: 10px;
+button:hover {
+    background: #16398a;
+}
+
+/* ===== СПИСОК ЗАДАЧ ===== */
+#task-list {
+    padding: 0;
+    list-style: none;
+}
+
+#task-list li {
+    background: #eef2ff;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Кнопки действий */
+li button {
+    background: #d9534f;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+li button:hover {
+    background: #b52b27;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #777;
+    font-size: 14px;
 }

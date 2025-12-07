@@ -13,5 +13,6 @@
 {% endblock %}
 
 {% block script %}
-<script src="{{ url_for('static', filename='js/tasks.js') }}"></script>
+<script type="module" src="{{ url_for('static', filename='js/tasks.js') }}"></script>
 {% endblock %}
+
